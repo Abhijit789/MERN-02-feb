@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let prom=new Promise((res,rej)=>{
+        //     let obj={
+        //         name:"ajay",
+        //         isSelected:false
+        //     }
+
+        //     if(obj.isSelected) res(obj)
+        //     else rej(obj)
+
+        // })
+
+        // prom.then((resp)=>{
+        //     resp.location="Pune"
+        //     console.log(resp);
+            
+        // }).catch((resp)=>{
+        //     resp.isSelected="false"
+        //     console.log(resp);
+            
+        // })
+
+        // console.log(prom);
+
+
+        // let prom1=Promise.all([
+        //     Promise.resolve("task 1 is completed"),
+        //     Promise.resolve("task 2 is completed"),
+        //     Promise.reject("Task 3 is resjected"),
+        //     Promise.resolve("Task 4 is complted")
+        // ])
+        // prom1.then((resp)=>{
+        //      console.log(resp);
+             
+        // }).catch((err)=>{
+        //     console.log(err);
+            
+        // })
+        
+
+        // let prom2=Promise.allSettled([
+        //     Promise.resolve("task 1 is completed"),
+        //     Promise.resolve("task 2 is completed"),
+        //     Promise.reject("Task 3 is resjected"),
+        //     Promise.resolve("Task 4 is complted")
+        // ])
+        // prom2.then((resp)=>{
+        //      console.log(resp);
+             
+        // }).catch((err)=>{
+        //     console.log(err);
+            
+        // })
+
+        // let prom3=Promise.race([
+        //     new Promise((resolve,reject)=>{
+        //         setTimeout(()=>{
+        //             resolve("Promise one is resolved");
+                    
+        //         },500)
+        //     }),
+        //     new Promise((resolve,reject)=>{
+        //         setTimeout(()=>{
+        //             resolve("Promise Two is resolved");
+                    
+        //         },5000)
+        //     }),
+        //     new Promise((resolve,reject)=>{
+        //         setTimeout(()=>{
+        //             resolve("Promise Three is resolved");
+                    
+        //         },1000)
+        //     }),
+        // ])
+
+        // prom3.then((result)=>{
+        //     console.log(result);
+            
+        // }).catch((err)=>{
+        //     console.log(err);
+            
+        // })
+
+
+        let prom4=Promise.any([
+            Promise.resolve("promise resolved"),
+            Promise.reject("Prom3 is rejected"),
+            Promise.resolve("Prom1 is resolved"),
+            Promise.resolve("Prom2 is resolved"),
+            
+        ])
+
+        prom4.then((result)=>{
+            console.log(result);
+            
+        }).catch((err)=>{
+            console.log(err);
+            
+        }).finally(console.log("finally gets executed"))
+
+        let resolved=Promise.resolve("resolved promise()")
+        resolved.then((result)=>{
+            console.log(result);
+            
+        })
+
+        let rejected=Promise.reject("rejected promise()")
+        resolved.then((result)=>{
+            console.log(result);
+            
+        }).catch((err)=>{
+            console.log("error rejecetd", err);
+            
+        })
+        
+    </script>
+</body>
+</html>

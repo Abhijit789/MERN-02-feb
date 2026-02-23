@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let duster={
+            company:"camline",
+            price:40,
+            weight:"30gms",
+            color:"black"
+        }
+
+        // for (const key in duster) {
+        //     // console.log(key);
+        //     console.log(`${key} : ${duster[key]}`);
+            
+            
+        // }
+
+
+
+        for(const key in duster){
+            if(key[0]==="c" && typeof duster[key]==="string"){
+                console.log(`${key}: ${duster[key]}`);
+                // console.log(typeof duster[key]); 
+                
+                
+            }
+        }
+    </script>
+</body>
+</html>

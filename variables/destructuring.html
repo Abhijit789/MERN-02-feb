@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Object Destructuring
+        // let human={
+        //     name:"jay",
+        //     age:23,
+        //     email:"jay@123.com",
+        //     address:{
+        //         city:"Mumbai",
+        //         state:"Maharashtra"
+        //     }
+        // }
+
+        // console.log(human.name);
+        
+        // let{name,age,email}=human;
+        // console.log(`My name is ${name} and age is ${age} , email ${email}`);
+
+        // let {name:var1,age:var2,email:var3}=human;
+        // console.log(`My name is ${var1} and age is ${var2} , email ${var3}`);
+
+        // let {address:{city,state}}=human;
+
+        // console.log(city , state);
+
+
+        let voterDetails={
+            name:"gangadhar",
+            age:55,
+            wifeDetails:{
+                name:"gangubai",
+                age:52,
+                address:{
+                    city:"gangapur",
+                    state:"Karnataka"
+                }
+            }
+        }
+
+        // let{name,age}=voterDetails.wifeDetails
+
+        // let {name,age}=voterDetails
+
+        // console.log(name , age);
+
+        // let {city,state}=voterDetails.wifeDetails.address
+
+        // console.log(city,state);
+
+        let {name,age,wifeDetails:{name:wifeName,age:wifeAge,address:{city,state}}}=voterDetails;
+
+        console.log(`My name is ${name} and ${age} my wife name is ${wifeName} , age is ${wifeAge} , address is ${city , state}`);
+        
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>

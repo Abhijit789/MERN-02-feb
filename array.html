@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //   Array
+
+        // let colors = ["red", "blue", "green", "yellow"]
+
+        // console.table(colors)
+        // console.log(colors.length);
+        // console.log(colors[2]);
+
+        // for (let i = 0; i < colors.length; i++) {
+        //     console.log(`color at index ${i} : ${colors[i]}`);
+
+        // }
+
+        // let studentData = [
+        //     { name: "ajay", age: 15, stdId: "aj123" },
+        //     { name: "rohit", age: 16, stdId: "ro124" },
+        //     { name: "sneha", age: 14, stdId: "sn125" },
+        //     { name: "vikas", age: 17, stdId: "vi126" },
+        //     { name: "pooja", age: 15, stdId: "po127" },
+        //     { name: "rahul", age: 16, stdId: "ra128" },
+        //     { name: "neha", age: 14, stdId: "ne129" },
+        //     { name: "arjun", age: 17, stdId: "ar130" },
+        //     { name: "kiran", age: 15, stdId: "ki131" },
+        //     { name: "meena", age: 16, stdId: "me132" },
+        //     { name: "sachin", age: 14, stdId: "sa133" },
+        //     { name: "deepak", age: 17, stdId: "de134" },
+        //     { name: "anita", age: 15, stdId: "an135" },
+        //     { name: "manoj", age: 16, stdId: "ma136" },
+        //     { name: "kavita", age: 14, stdId: "ka137" },
+        //     { name: "ramesh", age: 17, stdId: "rm138" },
+        //     { name: "sunita", age: 15, stdId: "su139" },
+        //     { name: "amit", age: 16, stdId: "am140" },
+        //     { name: "priya", age: 14, stdId: "pr141" },
+        //     { name: "nilesh", age: 17, stdId: "ni142" },
+        //     { name: "komal", age: 15, stdId: "ko143" },
+        //     { name: "ganesh", age: 16, stdId: "ga144" },
+        //     { name: "reema", age: 14, stdId: "re145" },
+        //     { name: "mahesh", age: 17, stdId: "mh146" },
+        //     { name: "divya", age: 15, stdId: "di147" },
+        //     { name: "suresh", age: 16, stdId: "sr148" },
+        //     { name: "anjali", age: 14, stdId: "an149" },
+        //     { name: "harish", age: 17, stdId: "ha150" },
+        //     { name: "pallavi", age: 15, stdId: "pa151" },
+        //     { name: "tushar", age: 16, stdId: "tu152" },
+        //     { name: "swati", age: 14, stdId: "sw153" },
+        //     { name: "yogesh", age: 17, stdId: "yo154" },
+        //     { name: "bhavna", age: 15, stdId: "bh155" },
+        //     { name: "akash", age: 16, stdId: "ak156" },
+        //     { name: "jyoti", age: 14, stdId: "jy157" },
+        //     { name: "naveen", age: 17, stdId: "nv158" },
+        //     { name: "shruti", age: 15, stdId: "sh159" },
+        //     { name: "vikram", age: 16, stdId: "vk160" },
+        //     { name: "monika", age: 14, stdId: "mo161" },
+        //     { name: "chetan", age: 17, stdId: "ch162" },
+        //     { name: "rutuja", age: 15, stdId: "ru163" },
+        //     { name: "abhay", age: 16, stdId: "ab164" },
+        //     { name: "sonali", age: 14, stdId: "so165" },
+        //     { name: "tejas", age: 17, stdId: "te166" },
+        //     { name: "madhuri", age: 15, stdId: "md167" },
+        //     { name: "suraj", age: 16, stdId: "sj168" },
+        //     { name: "prajakta", age: 14, stdId: "pk169" },
+        //     { name: "vinay", age: 17, stdId: "vn170" },
+        //     { name: "bhavesh", age: 15, stdId: "bv171" },
+        //     { name: "sakshi", age: 16, stdId: "sk172" }
+        // ];
+
+        // console.table(studentData)
+
+        // for (let i = 0; i < studentData.length; i++) {
+        //     // console.log(studentData[i]);
+        //     for (const keys in studentData[i]) {
+        //         console.table(`Student Data ${[i + 1]} ${keys}: ${studentData[i][keys]}`);
+        
+                
+
+        //     }
+
+        // }
+
+
+        // // Array constructor
+
+        // let array1=new Array()
+        // array1[0]="index 0"
+        // array1[1]="index 1"
+        // array1[2]="index 2"
+        // array1[7]="index 7"
+
+        // console.log(array1[5]);
+
+        // console.log(array1);
+
+        // // Array using new Keyword
+
+        // let array2=new Array("hello","bye")
+        // console.log(array2);
+
+
+        // // Array destructuring
+
+        // let [value1,value2]=array2
+        // console.log(value1);
+        // console.log(value2);
+
+        // map 
+        console.log("start");
+        
+        // let num=[2,4,6,8,10]
+
+        // let squareNum=num.map((ele,index)=>{
+        //     console.log(index);
+            
+        //     return Math.pow(ele,2)
+
+        // })
+
+        // console.log(squareNum);
+
+        
+        let studentData = [
+            { name: "ajay", age: 15, stdId: "aj123" },
+            { name: "rohit", age: 16, stdId: "ro124" },
+            { name: "sneha", age: 14, stdId: "sn125" },
+            { name: "vikas", age: 17, stdId: "vi126" },
+            { name: "pooja", age: 15, stdId: "po127" },
+            { name: "rahul", age: 16, stdId: "ra128" },
+            { name: "neha", age: 14, stdId: "ne129" },
+            { name: "arjun", age: 17, stdId: "ar130" },
+            { name: "kiran", age: 15, stdId: "ki131" },
+            { name: "meena", age: 16, stdId: "me132" },
+            { name: "sachin", age: 14, stdId: "sa133" },
+            { name: "deepak", age: 17, stdId: "de134" },
+            { name: "anita", age: 15, stdId: "an135" },
+            { name: "manoj", age: 16, stdId: "ma136" },
+            { name: "kavita", age: 14, stdId: "ka137" },
+            { name: "ramesh", age: 17, stdId: "rm138" },
+            { name: "sunita", age: 15, stdId: "su139" },
+            { name: "amit", age: 16, stdId: "am140" },
+            { name: "priya", age: 14, stdId: "pr141" },
+            { name: "nilesh", age: 17, stdId: "ni142" },
+            { name: "komal", age: 15, stdId: "ko143" },
+            { name: "ganesh", age: 16, stdId: "ga144" },
+            { name: "reema", age: 14, stdId: "re145" },
+            { name: "mahesh", age: 17, stdId: "mh146" },
+            { name: "divya", age: 15, stdId: "di147" },
+            { name: "suresh", age: 16, stdId: "sr148" },
+            { name: "anjali", age: 14, stdId: "an149" },
+            { name: "harish", age: 17, stdId: "ha150" },
+            { name: "pallavi", age: 15, stdId: "pa151" },
+            { name: "tushar", age: 16, stdId: "tu152" },
+            { name: "swati", age: 14, stdId: "sw153" },
+            { name: "yogesh", age: 17, stdId: "yo154" },
+            { name: "bhavna", age: 15, stdId: "bh155" },
+            { name: "akash", age: 16, stdId: "ak156" },
+            { name: "jyoti", age: 14, stdId: "jy157" },
+            { name: "naveen", age: 17, stdId: "nv158" },
+            { name: "shruti", age: 15, stdId: "sh159" },
+            { name: "vikram", age: 16, stdId: "vk160" },
+            { name: "monika", age: 14, stdId: "mo161" },
+            { name: "chetan", age: 17, stdId: "ch162" },
+            { name: "rutuja", age: 15, stdId: "ru163" },
+            { name: "abhay", age: 16, stdId: "ab164" },
+            { name: "sonali", age: 14, stdId: "so165" },
+            { name: "tejas", age: 17, stdId: "te166" },
+            { name: "madhuri", age: 15, stdId: "md167" },
+            { name: "suraj", age: 16, stdId: "sj168" },
+            { name: "prajakta", age: 14, stdId: "pk169" },
+            { name: "vinay", age: 17, stdId: "vn170" },
+            { name: "bhavesh", age: 15, stdId: "bv171" },
+            { name: "sakshi", age: 16, stdId: "sk172" }
+        ];
+
+        // let studentDataDetails=studentData.map((student,index)=>{
+        //     let {name,age,stdId}=student
+        //     return `Student Name : ${name} , Age : ${age} , StdId : ${stdId}`
+        // })
+
+        // console.table(studentDataDetails);
+
+
+        // let studentFilter=studentData.filter((student)=>{
+        //     let {name,age,stdId}=student
+        //     if(age<17){
+        //         return `Student Name : ${name} , Age : ${age} , StdId : ${stdId}`
+        //     }
+        // })
+
+        // console.table(studentFilter)
+        // console.log(studentData);
+
+
+        let num=[1,2,3,4,5,6]
+        let sum=num.reduce((acc,cEle,index)=>{
+            return acc+cEle
+        })
+
+        console.log(sum);
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+
+
+
+    </script>
+</body>
+
+</html>

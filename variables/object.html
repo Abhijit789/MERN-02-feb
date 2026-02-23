@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // object declaration
+
+        let obj={
+            name:"ajay",
+            email:"ajay@123.com",
+            age:25
+        }
+
+        console.log(obj)
+
+        // functional constructor
+
+        function Employee(ename,esal,empId){
+            this.ename=ename;
+            this.esal=esal;
+            this.empId=empId
+
+        }
+
+        let employee1=new Employee("mahesh",40000,"TYS234")
+
+        console.log(employee1);
+
+        let employee2=new Employee("jay",45000,"TYS123")
+
+        console.log(employee2);
+
+        employee2.ename="ramesh"
+        console.log(employee2.ename);
+
+        console.log("updated employee2",employee2);
+
+        console.log(employee1["ename"]);
+
+
+        // Object constructor
+
+        let human=new Object()
+
+        console.log(typeof human);
+
+        human["name"]="ajay"
+        console.log(human);
+        human.age=34;
+        console.log(human);
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>

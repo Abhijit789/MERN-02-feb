@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function parent(){
+        //     console.log("parent function");
+            
+        //     let a=20;
+        //     let b=30;
+        //     return ()=>{
+        //         console.log("child function");
+        //         return ()=>{
+        //             console.log("grand child function");
+                    
+        //         }
+        //     }
+        // }
+
+        // parent()()();
+      
+        // function currying
+        // function calculator(){
+        //     return (a,b)=>{
+        //         console.log("addition");
+                
+        //         console.log(a+b);
+        //         return (c,d)=>{
+        //             console.log("multiplication");
+                    
+        //             console.log(c*d);
+        //             return (e,f)=>{
+        //                 console.log("division");
+                        
+        //                 console.log(e/f);
+        //                 return (g,h)=>{
+        //                     console.log("substraction");
+                            
+        //                  console.log(g-h);
+                         
+        //                 }
+                        
+        //             }
+                    
+        //         }
+                
+
+        //     }
+        // }
+
+        // calculator()(10,20)(20,30)(100,5)(200,100)
+
+
+        // callback function
+
+        function person1(person1,callback){
+            console.log(`${person1} is taking to someone`);
+            setTimeout(callback,4000)
+            console.log(`${person1} is ended up the conversation with someone`);
+            
+            
+        }
+
+        function person2(){
+            console.log(`peroson2  is getting call from manoj`);
+            
+        }
+
+        person1("manoj",person2)
+        
+    </script>
+</body>
+</html>
