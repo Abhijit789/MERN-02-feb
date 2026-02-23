@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>   
+    <style>
+        ul{
+            list-style: none;
+            display: flex;
+            border-bottom: 2px solid;
+            width: 50%;
+            justify-content: space-around;
+            margin: 200px auto;
+        }
+        ul li{
+            height: 50px;
+            width: 50px;
+            border:1px solid;
+
+            background-color: black;
+            border-radius: 50%;
+            margin-top: 5px;
+            margin-bottom: 10px;
+
+             animation: bounce 1s ease-in-out infinite alternate;
+        }
+        @keyframes bounce {
+            0%{
+                transform: translateY(0px);
+            }50%{
+                transform:translateY(-150px)
+            }100%{
+                transform: translateY(0px);
+            }
+            
+        }
+        #list1{
+            animation-delay: 0.1s;
+        }
+        #list2{
+            animation-delay: 0.2s;
+        }
+        #list3{
+            animation-delay: 0.3s;
+        }
+        #list4{
+            animation-delay: 0.4s;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="list1"></li>
+        <li id="list2"></li>
+        <li id="list3"></li>
+        <li id="list4"></li>
+    </ul>
+</body>
+</html>

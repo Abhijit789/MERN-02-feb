@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const users = [
+  { name: "Vinoth", age: 25 },
+  { name: "Rahul", age: 28 },
+  { name: "Sneha", age: 23 },
+  { name: "Anita", age: 30 },
+  { name: "Karthik", age: 27 }
+];
+
+let filterData=users.filter(user=>{
+    if(user.age>27){
+         return user
+    }
+})
+
+console.log(filterData);
+
+let num=[1,2,3,5,6,3,2,1,2,1,4,5,7]
+
+let unique=num.filter((ele,index,array)=>{
+    if(array[index]===ele){
+        return ele
+    }
+    
+    
+})
+
+console.log(unique);
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

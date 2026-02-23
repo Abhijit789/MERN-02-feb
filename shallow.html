@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Shallow Copy
+        //  let obj1={
+        //     name:"vijay",
+        //     age:23,
+        //     address:{
+        //         city:"Pune",
+        //         state:"MH"
+        //     }
+        //  }
+
+        //  let obj2={...obj1}
+
+        //  obj2.name="ajay"
+        //  console.log("obj2",obj2);
+        //  console.log("obj1",obj1);
+
+        //  console.log(obj2.address.city==obj1.address.city);
+        //  obj2.address.city="banglore"
+        //  console.log(obj1.address.city);
+
+
+        //  deep copy 
+
+        let obj1={
+            name:"vijay",
+            age:23,
+            address:{
+                city:"Pune",
+                state:"MH"
+            }
+         }
+
+        let obj2=JSON.parse(JSON.stringify(obj1))
+
+        console.log(obj2==obj1);
+
+        console.log(obj2);
+
+        obj2.address.city="chennai"
+
+        console.log(obj1);
+        console.log(obj2);
+        console.log(obj2.address.city===obj1.address.city);
+        
+        
+        
+        
+        
+         
+         
+         
+    </script>
+</body>
+</html>

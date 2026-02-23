@@ -9,17 +9,63 @@
     <script>
         let date=new Date()
         console.log(date);
-        
-        let manualDate=new Date("2025","11","32","11","59","58","2000")
-        console.log(manualDate);
 
-        console.log(manualDate.getDay());
-        console.log(manualDate.getFullYear());
-        console.log(manualDate.getHours());
-        console.log(manualDate.getMilliseconds());
-        console.log(manualDate.getSeconds());
-        console.log(manualDate.getMinutes());
-        console.log(manualDate.getHours());
+        console.log(date.getHours());
+        console.log(date.getUTCHours());
+        console.log(date.getDay());
+        console.log(date.getUTCDay());
+        console.log(date.getFullYear());
+        console.log(date.getUTCFullYear());
+        console.log(date.getTimezoneOffset());
+        console.log(date.getMilliseconds());
+        console.log(date.getUTCMilliseconds());
+        
+        // custom formate
+        console.log(`${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`);
+
+        // string formate
+
+        let stringFormat=date.toString()
+        console.log(stringFormat);
+
+        let localDate=date.toDateString()
+        console.log(localDate);
+
+        let locatDate=date.toLocaleDateString()
+        console.log(locatDate);
+
+        let localTime=date.toLocaleTimeString()
+        console.log(localTime);
+
+        let ISODate=date.toISOString()
+        console.log(ISODate);
+
+        let local=date.toTimeString()
+        console.log(local);
+
+        let jsonLocal=date.toJSON();
+        console.log(jsonLocal);
+
+        let timeString=date.toTimeString();
+        console.log(timeString);
+
+
+        // setter methods 
+
+        let date1=new Date();
+        date1.setFullYear(2024);
+        date1.setMonth(0);
+        date1.setDate(23)
+        date1.setHours(11)
+        date1.setMinutes(59)
+        date1.setSeconds(54)
+        date1.setMilliseconds(455)
+  
+        console.log(date1);
+        
+
+
+
 
         
         
@@ -27,8 +73,9 @@
         
         
         
-
         
+        
+
     </script>
 </body>
 </html>

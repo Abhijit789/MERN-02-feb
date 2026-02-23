@@ -1,3 +1,7 @@
 {
+<<<<<<< HEAD
     "github.copilot.nextEditSuggestions.enabled": true
+=======
+    "liveServer.settings.port": 5501
+>>>>>>> 3e755d2683bdf0b67c38486c4510661ae813300a
 }
