@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <script>
+          let div=document.createElement("div");
+          console.log(div);
+          div.textContent="box element"
+          document.body.append(div)
+
+          div.setAttribute("class","box")
+          console.log(div.classList);
+
+          div.classList="box1"
+          div.classList=["active box remove deactive"]
+
+          console.log(div.classList);
+
+          div.setAttribute("id","box1")
+
+          console.log(div.id);
+
+          div.setAttribute("title","this is div element");
+
+          let ul=document.createElement("ul")
+          document.body.append(ul)
+
+          let li=document.createElement("li");
+          ul.append(li)
+
+          li.textContent="LIST ONE"
+          
+          
+          
+          
+    </script>
+</body>
+</html>
