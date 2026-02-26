@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- id selector -->
+    <!-- <div id="box1">ELEMENT 1</div>
+    <div id="box1">ELEMENT 2</div>
+    <div id="box1">ELEMENT 3</div> -->
+
+    <!-- class selector -->
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+    <script>
+        // DOM METHODS: It is used to target html elements in order to provide dynamic styling.
+        // getElementById():It is used to target the HTML element , with the help of its id. It cannot target multiple elements which has same id.
+        // getELementByClassName()
+        // getElementByTagName()
+        // querySelector()
+        // querySelectorAll()
+
+        // let ele1=document.getElementById("box1")
+        // console.log(ele1);
+        // ele1.innerHTML="Box 1"
+
+        // ele1.className="BOX"
+
+        // ele1.style.backgroundColor="yellow"
+        // ele1.style.color="red"
+
+
+        // class selector
+        let elements=document.getElementsByClassName("box")
+        console.log(elements);
+
+        // elements[0].style.backgroundColor="red";
+        // elements[0].innerHTML="Element one"
+        // elements[0].style.color="white"
+
+        for(let i=0;i<elements.length;i++){
+            console.log(elements[i]);
+            if(i%2==0){
+                elements[i].style.height="200px"
+                elements[i].style.width="200px"
+                elements[i].style.border="1px solid"
+                elements[i].style.borderRadius="30px"
+                elements[i].style.textAlign="center"
+                elements[i].style.lineHeight="200px"
+                elements[i].innerHTML=`Element ${i+1}`
+                elements[i].style.margin="20px 0px"
+
+            }else{
+                elements[i].style.height="200px"
+                elements[i].style.width="200px"
+                elements[i].style.border="1px solid"
+                elements[i].style.borderRadius="100px"
+
+            }
+            
+
+        }
+        
+
+
+
+        
+
+
+    </script>
+</body>
+</html>
